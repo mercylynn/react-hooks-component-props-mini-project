@@ -1,0 +1,21 @@
+import React from 'react'
+import Article from './Article'
+
+function ArticleList({ posts })
+// const { title, date, preview, minutes } = ArticleList
+
+
+{
+    return (
+        <>
+
+            <main>
+                {posts.map((post) => (<Article key={post.id} title={post.title} date={post.date} preview={post.preview} time={post.minute} />))}
+
+
+            </main>
+        </>
+    )
+}
+
+export default ArticleList
